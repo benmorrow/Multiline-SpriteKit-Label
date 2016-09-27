@@ -3,6 +3,8 @@ Adds support via an extension to lay out text on multiple lines in SpriteKit
 
 ![simulator screenshot multiline SKLabelNode](http://i.imgur.com/7TmCORE.png)
 
+`SKLabelNode` was not intended to use multiline strings. Since functionality is limited with SKLabelNode you can use this extension to solve the problem. Just add newline characters, "\n", whereever you want a line break.
+
 Here's the solution in Swift 3:
 
     extension SKLabelNode {
@@ -37,4 +39,4 @@ Here's how your use it:
     message.zPosition = 1001
     addChild(message)
     
-Download this project to try it out. Build and run the iOS app scheme. You'll see the multiline SKLabelNode displayed in the simulator.
+Download this project to try it out. Build and run the iOS app scheme. You'll see the multiline `SKLabelNode` displayed in the simulator.
