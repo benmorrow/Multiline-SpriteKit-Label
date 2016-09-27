@@ -31,12 +31,12 @@ Here's how you use it:
     let text = "hot dogs\ncold beer\nteam jerseys"
     let singleLineMessage = SKLabelNode()
     singleLineMessage.fontSize = min(size.width, size.height) /
-      CGFloat(text.components(separatedBy: "\n").count)
-    singleLineMessage.verticalAlignmentMode = .center
+      CGFloat(text.components(separatedBy: "\n").count) // Fill the screen
+    singleLineMessage.verticalAlignmentMode = .center // Keep the origin in the center
     singleLineMessage.text = text
     let message = singleLineMessage.multilined()
     message.position = CGPoint(x: frame.midX, y: frame.midY)
-    message.zPosition = 1001
+    message.zPosition = 1001  // On top of all other nodes
     addChild(message)
     
 Download this project to try it out. Build and run the iOS app scheme. You'll see the multiline `SKLabelNode` displayed in the simulator.
