@@ -26,7 +26,7 @@ Here's the solution in Swift 3:
       }
     }
 
-Here's how your use it:
+Here's how you use it:
 
     let text = "hot dogs\ncold beer\nteam jerseys"
     let singleLineMessage = SKLabelNode()
